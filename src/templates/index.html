@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro de Usuarios</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}"/>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: rgb(21, 27, 46);
+      }
+      .form-group {
+        margin-bottom: 30px;
+        
+      }
+      .form-group label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 6px;
+        color: rgb(231, 182, 46);
+        
+      }
+      .form-group input[type="text"],
+      .form-group input[type="password"] {
+        width: 120%;
+        padding: 5px;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+
+      .form-group button {
+        width: 100%;
+        padding: 15px;
+        background-color: rgb(231, 182, 46);
+        color: black;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      .form-group button:hover {
+        background-color: #45a049; /* Cambiar el color de fondo al pasar el cursor */
+    }
+      .boton-mostrar {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: rgb(231, 182, 46); /* Color de fondo */
+        color: black; /* Color del texto */
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px; /* Bordes redondeados */
+    }
+    
+    .boton-mostrar:hover {
+        background-color: #45a049; /* Cambiar el color de fondo al pasar el cursor */
+    }
+    .imagen {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      padding: 0% 180px;
+      top: 340px;
+      left: 600px;
+  }
+  .iniciar {
+    margin: 30px 0;
+    text-align: center;
+    font-size: 18px;
+    color: rgb(244, 244, 247);
+}
+.titulo1{
+  color:rgb(231, 182, 46);
+}
+.titulo {
+  display: flex;
+  align-items: right;
+  height: 90vh;
+  width: 700px;
+  right: 100%;
+  margin: 10px;
+  justify-content: right;
+  color: rgb(168, 167, 167);
+  font-size: 43px;
+  flex-direction: column;
+}
+    
+    </style>
+  </head>
+  <body>
+    <div class="product-form">
+      <div class="titulo1">
+      <h2>Registro de Usuarios</h2>
+      </div>
+      <form action="guardar_producto" method="POST">
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required />
+        </div>
+        <div class="form-group">
+          <label for="apellido">Apellido:</label>
+          <input type="text" id="apellido" name="apellido" required />
+        </div>
+        <div class="form-group">
+          <label for="correo">Correo:</label>
+          <input type="text" id="correo" name="correo" required />
+        </div>
+        <div class="form-group">
+          <label for="contrasena">Contraseña:</label>
+          <input type="password" id="contrasena" name="contrasena" required />
+        </div>
+        <div class="form-group">
+          <button type="submit">Registrar</button>
+        </div>
+
+      </form>
+      
+      <div class="iniciar">
+        ¿ya tienes una cuenta? <div class="form-group">
+          <a class="boton-mostrar" href="login" target="_blank">Iniciar sesion</a>
+        </div>
+    </div>
+
+    </div>
+    <figure>
+      <img class="imagen" src="static/imagenes/brazo.png" alt="brazo robótico" />
+  </figure>
+  <div class="titulo">
+    <h1>Control system of a Robotic arm</h1>
+</div>
+    
+  </body>
+</html>

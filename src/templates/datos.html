@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Datos</title>
+</head>
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        background-color: rgb(21, 27, 46);
+        width: 1233px;
+        color: aliceblue;
+    }
+    .tabla{
+        background-color: rgb(90, 100, 134);
+    }
+    .graficoBarras{
+        display: flex;
+        padding: 21px;
+        width: 265px;
+        height: 173px;
+        align-items: flex-start;
+        flex-direction: column;
+        position: absolute;
+        top: 232px;
+        left: 900px;
+    }
+
+    .contenedor {
+        width: 300px;
+        height: 200px;
+        background-color: #4c586e;
+        border-radius: 20px; 
+        position: absolute;
+        top: 227px;
+        left: 850px;
+      }
+    .inicio{
+        position: absolute;
+        top: 22px;
+        left: 900px;
+        font-size: 19px;
+    }
+    .modulos{
+        position: absolute;
+        top: 22px;
+        left: 1000px;
+        font-size: 19px;
+    }
+    h1{
+        text-align: center;
+        font-size: 40px;
+    }
+    .graficoLineal{
+        display: flex;
+        padding: 21px;
+        width: 265px;
+        height: 173px;
+        align-items: flex-start;
+        flex-direction: column;
+        position: absolute;
+        top: 535px;
+        left: 900px;
+    }
+    .contenedor1 {
+        width: 300px;
+        height: 200px;
+        background-color: #4c586e;
+        border-radius: 20px; 
+        position: absolute;
+        top: 527px;
+        left: 850px;
+      }
+</style>
+<body>
+
+ <p>SRCA</p>
+ <br>
+ <p class="inicio">Inicio</p>
+ <p class="modulos">Modulos</p>
+ <hr>
+ <form action="/datos" method="POST">
+ <h1>Registro de datos</h1>   
+ <p class="admin">Registros</p>
+ 
+<div class="table">
+    <table border="1"  width="300" class="tabla">
+        <tr>
+          <td>velocidad</td>
+          <td>Calibracion</td>
+          <td>Temperatura</td>
+          <td>energia</td>
+    
+        </tr>
+        <tr>
+          <td>34.5</td>
+          <td>13.2</td>
+          <td>23.4 °C</td>
+          <td>29.5</td>
+        </tr>
+        <tr>
+          <td>35.6</td>
+          <td>62.7</td>
+          <td>23.5 °C</td>
+          <td>32.5</td>
+        </tr>
+        <tr>
+          <td>35.4</td>
+          <td>23.4</td>
+          <td>63.3°C</td>
+          <td>15.6</td>
+        </tr>
+      </table>
+
+</div>
+
+<div class="contenedor">  
+</div>
+<div class="graficoBarras">
+    <img src="static/imagenes/grafico-de-barras.png" alt="barras" width="131px">
+    <p>Grafico de Barras</p>
+  </div>
+  
+  <div class="contenedor1" >  
+</div>
+  <div class="graficoLineal">
+    <img src="static/imagenes/grafico-de-linea.png" alt="lineal" width="131px">
+    <p>Grafica Lineal</p>
+  </div>
+</form>
+
+</body>
+
+</html>

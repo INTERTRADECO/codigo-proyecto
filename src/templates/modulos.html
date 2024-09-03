@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale-1.0">
+  <title>MODULOS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="content">
+      <div class="menu container">
+        <a href="" class="logo">C s R a</a>
+        <input type="checkbox" id="menu" />
+        <label for="menu">
+        </label>
+        <nav class="navbar">
+          <ul>
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Perfil</a></li>
+            <li><a href="">Modulos</a></li>
+            <li><a href="">Manual</a></li>
+          </ul>
+
+        </nav>
+        
+      </div>
+      
+    </div>
+    <div class="linea">
+      <p>.</p>
+    </div>
+  </header>
+  <form action="/modulos" method="POST">
+  <div class="mtitulo">
+    <h1>Modulos de control</h1>
+  </div>
+
+  <a class="admin" href="perfil">Administrar Perfil</a>
+  <img class="imgp" src="static/imagenes/perfil.PNG" alt="">
+  <div class="texto1">
+    <p>editar y configurar datos del perfil</p>
+  </div>
+
+  <a class="datos" href="datos">Registro de Datos</a>
+  <img class="imgd" src="static/imagenes/datos.PNG" alt="">
+  <div class="texto2">
+    <p>se almacenan los datos</p>
+  </div>
+
+  <a class="ajuste" href="">Calibracion y Ajuste</a>
+  <img class="imga" src="static/imagenes/ajuste.PNG" alt="">
+  <div class="texto3">
+    <p>Ajustar el brazo para tener un rendimiento preciso</p>
+  </div>
+
+  <a class="configuracion" href="">Configuracion de Movimientos</a>
+  <img class="imgc" src="static/imagenes/configuracion.PNG" alt="">
+  <div class="texto4">
+    <p>configurar movimientos lineales, giro, velocidad y aceleracion</p>
+  </div>
+
+  <a class="programacion" href="codigo/codigo.ino">Progrmacion de secuencia</a>
+  <img class="imgpro" src="static/imagenes/programacion.PNG" alt="">
+  <div class="texto5">
+    <p>Secuencia de movimientos y acciones</p>
+  </div>
+
+  <a class="manual" href="">Manual de Usuario</a>
+  <img class="imgm" src="static/imagenes/manual.PNG" alt="">
+  <div class="texto6">
+    <p>informacion util para resolver dudas</p>
+  </div>
+</form>
+
+</body>
+<style>
+    .admin {
+        position: absolute;
+        top: 200px;
+        left: 0px;
+        padding: 5px 10px;
+        margin: 10px 100px;
+        background: rgb(170, 91, 17);
+        border-radius: 70px;
+        font-size: 15px;
+        color: rgb(241, 248, 248);
+        text-decoration: none;
+    }
+    
+    .datos {
+        position: absolute;
+        top: 200px;
+        left: 300px;
+        padding: 5px 10px;
+        margin: 10px 100px;
+        background: rgb(170, 91, 17);
+        border-radius: 80px;
+        font-size: 15px;
+        color: rgb(251, 251, 251);
+        text-decoration: none;
+    }
+    
+    .ajuste {
+        position: absolute;
+        top: 200px;
+        left: 590px;
+        padding: 5px 10px;
+        margin: 10px 100px;
+        background: rgb(170, 91, 17);
+        border-radius: 80px;
+        font-size: 15px;
+        color: rgb(251, 251, 251);
+        text-decoration: none;
+    }
+    
+    .configuracion {
+        position: absolute;
+        top: 200px;
+        left: 860px;
+        padding: 5px 10px;
+        margin: 10px 100px;
+        background: rgb(170, 91, 17);
+        border-radius: 80px;
+        font-size: 15px;
+        color: rgb(254, 254, 254);
+        text-decoration: none;
+    }
+    
+    .programacion {
+        position: absolute;
+        top: 430px;
+        left: 0px;
+        padding: 5px 10px;
+        margin: 10px 100px;
+        background: rgb(170, 91, 17);
+        border-radius: 80px;
+        font-size: 15px;
+        color: rgb(249, 249, 249);
+        text-decoration: none;
+    }
+    
+    .manual {
+        position: absolute;
+        top: 430px;
+        left: 300px;
+        padding: 5px 10px;
+        margin: 10px 100px;
+        background: rgb(170, 91, 17);
+        border-radius: 80px;
+        font-size: 15px;
+        color: rgb(251, 251, 251);
+        text-decoration: none;
+    }
+    
+    .imgp {
+        position: absolute;
+        width: 180px;
+        height: 100px;
+        top: 250px;
+        left: 90px;
+    }
+    
+    .imgd {
+        position: absolute;
+        width: 180px;
+        height: 100px;
+        top: 250px;
+        left: 390px;
+    }
+    
+    .imga {
+        position: absolute;
+        width: 180px;
+        height: 100px;
+        top: 250px;
+        left: 690px;
+    }
+    
+    .imgc {
+        position: absolute;
+        width: 180px;
+        height: 100px;
+        top: 250px;
+        left: 990px;
+    }
+    
+    .imgpro {
+        position: absolute;
+        width: 180px;
+        height: 100px;
+        top: 480px;
+        left: 90px;
+    }
+    
+    .imgm {
+        position: absolute;
+        width: 180px;
+        height: 100px;
+        top: 480px;
+        left: 390px;
+    }
+    
+    .fondo {
+        position: absolute;
+        width: 1150px;
+        height: 470px;
+        top: 170px;
+        left: 70px;
+    }
+    
+    .texto1 {
+        position: absolute;
+        top: 370px;
+        left: 50px;
+        color: rgb(149, 149, 162);
+        font-size: 12px;
+        border-radius: 20px;
+    }
+    .texto2 {
+        position: absolute;
+        top: 370px;
+        left: 400px;
+        color: rgb(149, 149, 162);
+        font-size: 12px;
+        border-radius: 20px;
+    }
+    .texto3 {
+        position: absolute;
+        top: 370px;
+        left: 650px;
+        color: rgb(149, 149, 162);
+        font-size: 12px;
+        border-radius:0px;
+    
+    }
+    .texto4 {
+        position: absolute;
+        top: 370px;
+        left: 950px;
+        color: rgb(149, 149, 162);
+        font-size: 12px;
+        border-radius:0px;
+    
+    }
+    .texto5 {
+        position: absolute;
+        top: 610px;
+        left: 50px;
+        color: rgb(149, 149, 162);
+        font-size: 12px;
+        border-radius:0px;
+    
+    }
+    .texto6 {
+        position: absolute;
+        top: 610px;
+        left:400px;
+        color: rgb(149, 149, 162);
+        font-size: 12px;
+        border-radius:0px;
+    
+    }
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style: none;
+    }
+    
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .content {
+        min-height: 80px;
+        background: linear-gradient(rgba(203, 18, 133, 1)0%);
+    }
+    
+    .menu {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .logo {
+        font-size: 25px;
+        color: aliceblue;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+    .menu .navbar ul li {
+        position: relative;
+        float: left;
+    }
+    
+    .menu .navbar ul li a {
+        font-size: 18px;
+        padding: 20px;
+        color: antiquewhite;
+        display: block;
+        font-weight: bold;
+    }
+    
+    .menu .navbar ul li a:hover {
+        color: rgb(39, 235, 235);
+    }
+    
+    #menu {
+        display: none;
+    }
+    
+    .menu-icono {
+        width: 25px;
+    }
+    
+    .menu label {
+        cursor: pointer;
+        display: none;
+    }
+    
+    @media(max-width:991px) {
+        .content {
+            min-height: 70px;
+        }
+    
+        .menu {
+            top: 0;
+            padding: 20px;
+        }
+    
+        .menu label {
+            display: initial;
+        }
+    
+        .menu .navbar {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: linear-gradient(rgba(203, 18, 133, 1)0%);
+            display: none;
+        }
+        .menu .navbar ul li{
+            width: 100%;
+        }
+        #menu:checked ~ .navbar{
+    display: initial;
+        }
+    }
+    .linea{
+        background-color: rgb(95, 105, 101);
+    }
+    .imagen {
+        float: left;
+        width: 200px;
+        height: 200px;
+        padding: 0% 180px;
+    }
+    
+    .mtitulo {
+        display: flex;
+        align-items: center;
+        height: 15vh;
+        width: 800px;
+        right: 300%;
+        justify-content: center;
+        color: rgb(194, 192, 192);
+        font-size: 34px;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: rgb(21, 27, 46);
+        height: 95vh;
+    }
+</style>
+
+</html>

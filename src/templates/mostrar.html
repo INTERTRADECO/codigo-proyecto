@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Producto</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #13213b; 
+    }
+    .login-container {
+        background-color: #1c4444;  
+        padding: 50px;
+        color: rgb(236, 180, 25);
+    }
+    .form-group {
+        margin-bottom: 40px; 
+    }
+    .form-group label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color:rgb(240, 245, 245);
+    }
+    .form-group input[type="text"],
+    .form-group input[type="password"] {
+        width: 100%;
+        padding: 5px;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+   
+    .form-group button {
+        width: 100%;    
+        padding: 15px;
+        background-color: #3b7bc0;
+        color: #f3c018;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }</style>
+</head>
+<body>
+        <h2>Lista de Usuarios Registrados</h2>
+
+        {%for dato in datos%}
+            <form action="/guardar_producto">
+                <input type="text" name="nombre" value="{{dato.nombre}}">
+                <input type="text" name="apellido" value="{{dato.apellido}}">
+                <input type="text" name="correo" value="{{dato.correo}}">
+                <input type="text" name="contrasena" value="{{dato.contrasena}}">
+                <button type="submit"> Actualizar</button>
+                <a onclick="return confirm('¿Estas seguro de borrar el registro? ')" href="{{url_for('eliminar', nombre_persona = dato.nombre)}}">eliminar</a>
+            </form>
+        {%endfor%}  
+    
+    </div>
+</body>
+</html>
+
